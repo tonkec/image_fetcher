@@ -1,1 +1,10 @@
+@import '../../assets/colors';
 
+.grid-item-content {
+  background-color: $hoverColor;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  padding: 10px;
+  color: $white;
+}

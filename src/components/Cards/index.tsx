@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { getAllImages } from '../../services/api';
 import { ImageModel } from '../../models/Image';
 import Card from './../Card';
-
 import './Cards.scss';
 
 const LIMIT = 7;
