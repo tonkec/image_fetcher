@@ -3,6 +3,7 @@ import { getAllImages } from '../../services/api';
 import { ImageModel } from '../../models/Image';
 import Card from './../Card';
 import './Cards.scss';
+import './Button.scss';
 
 const LIMIT = 7;
 
@@ -51,8 +52,10 @@ const Cards = () => {
 
   return (
     <>
-      {images.length > 0 ? generateGrid() : <p>No images</p>}{' '}
-      <button onClick={onButtonClick}>click</button>
+      {images.length > 0 ? generateGrid() : <p>No images</p>}
+      <button className="button" onClick={onButtonClick}>
+        Button
+      </button>
     </>
   );
 };

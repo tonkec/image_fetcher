@@ -1,0 +1,15 @@
+@import '../../assets/colors';
+
+.button {
+  position: fixed;
+  right: 22vw;
+  top: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+  border: none;
+  background-color: $purple;
+  color: $white;
+  border-radius: 25px;
+  padding: 8px 20px 5px;
+}
