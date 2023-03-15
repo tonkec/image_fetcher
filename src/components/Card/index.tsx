@@ -2,16 +2,16 @@ import { ImageModel } from '../../models/Image';
 import './Card.scss';
 interface CardProps {
   image: ImageModel;
+  id: string;
 }
 
-const Card = ({ image }: CardProps) => {
+const Card = ({ image, id }: CardProps) => {
   return (
-    <img
-      src={image.download_url}
-      style={{ width: '100%', height: 'auto' }}
-      alt="Beauty"
-      className="card"
-    />
+    <div
+      id={id}
+      className="grid-item"
+      style={{ backgroundImage: `url(${image.download_url})` }}
+    ></div>
   );
 };
 
