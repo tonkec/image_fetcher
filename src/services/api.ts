@@ -8,8 +8,3 @@ export const getAllImages = async (page: number, limit: number) => {
   );
   return response.data;
 };
-
-export const getImage = async (id: string) => {
-  const response = await axiosInstance.get(`id/${id}/info`);
-  return response.data;
-};
