@@ -34,6 +34,7 @@ const Cards = () => {
     }
     const finalGrid = (
       <>
+        <h2 className="grid-heading">Connect people & spaces</h2>
         {grids.map((images, gridIndex) => (
           <div className="container">
             <div

@@ -1,5 +1,17 @@
 @import './assets/colors';
-
+@import './assets/variables';
+@import './assets/helpers';
 body {
   background-color: $bodyBacgkground;
+}
+
+#root {
+  padding-top: $topSpacer;
+  padding-bottom: $bottomSpacer;
+  padding-left: $leftSpacer / 2;
+  padding-right: $rightSpacer / 2;
+  @include tablet {
+    padding-left: $leftSpacer;
+    padding-right: $rightSpacer;
+  }
 }
