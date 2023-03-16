@@ -4,7 +4,7 @@ This is a test task for a company that I applied to for a job. My main task was 
 
 ### How does it look like?
 
-<img src="https://i.ibb.co/nnzw2bk/screencapture-localhost-3000-2023-03-16-09-58-56.png" width="200" alt="demo">
+<img src="https://i.ibb.co/nnzw2bk/screencapture-localhost-3000-2023-03-16-09-58-56.png" width="500" alt="demo">
 
 ### How to run this app?
 
