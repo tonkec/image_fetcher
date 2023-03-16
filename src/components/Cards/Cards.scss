@@ -1,5 +1,5 @@
 @import '../../assets/helpers';
-
+@import '../../assets/colors';
 .grid-container {
   margin-top: 10px;
   display: grid;
@@ -13,11 +13,19 @@
     background-position: center center;
     overflow: hidden;
     cursor: pointer;
+    position: relative;
 
     &:hover {
       .grid-item-content {
         transform: translateY(0);
       }
+    }
+
+    p {
+      position: absolute;
+      color: $white;
+      padding: 10px;
+      margin: 0;
     }
   }
 

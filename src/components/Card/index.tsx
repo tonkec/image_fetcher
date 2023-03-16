@@ -12,6 +12,7 @@ const Card = ({ image, id }: CardProps) => {
       className="grid-item"
       style={{ backgroundImage: `url(${image.download_url})` }}
     >
+      <p>{image && image.author}</p>
       <div className="grid-item-content">{image && image.author}</div>
     </div>
   );
