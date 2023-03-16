@@ -34,14 +34,21 @@ const Cards = () => {
     }
     const finalGrid = (
       <>
-        {grids.map((images) => (
-          <div
-            key={images.map((image) => image.id).join('-')}
-            className="grid-container"
-          >
-            {images.map((image) => (
-              <Card key={image.id} image={image} id={image.id} />
-            ))}
+        {grids.map((images, gridIndex) => (
+          <div className="container">
+            <div
+              key={images.map((image) => image.id).join('-')}
+              className="grid-container"
+            >
+              {images.map((image) => (
+                <Card key={image.id} image={image} id={image.id} />
+              ))}
+            </div>
+            {gridIndex + 1 === grids.length && (
+              <button className="button" onClick={onButtonClick}>
+                Button
+              </button>
+            )}
           </div>
         ))}
       </>
@@ -50,14 +57,7 @@ const Cards = () => {
     return finalGrid;
   };
 
-  return (
-    <>
-      {images.length > 0 ? generateGrid() : <p>No images</p>}
-      <button className="button" onClick={onButtonClick}>
-        Button
-      </button>
-    </>
-  );
+  return <>{images.length > 0 ? generateGrid() : <p>No images</p>}</>;
 };
 
 export default Cards;
